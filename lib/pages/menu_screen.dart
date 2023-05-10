@@ -30,46 +30,6 @@ class MyMenu extends StatelessWidget {
             child: Column(
               children: [
                 MyMenuBar(),
-                Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      ElevatedButton(
-                        child: Text('Table'),
-                        onPressed: () {
-                          Navigator.pushNamed(context, '/table');
-                        },
-                      ),
-                      SizedBox(
-                        height: 30,
-                      ),
-                      ElevatedButton(
-                        child: Text('List'),
-                        onPressed: () {
-                          Navigator.pushNamed(context, '/list');
-                        },
-                      ),
-                      SizedBox(
-                        height: 30,
-                      ),
-                      ElevatedButton(
-                        child: Text('Calculator'),
-                        onPressed: () {
-                          Navigator.pushNamed(context, '/calculator');
-                        },
-                      ),
-                      SizedBox(
-                        height: 30,
-                      ),
-                      ElevatedButton(
-                        child: Text('Profile'),
-                        onPressed: () {
-                          Navigator.pushNamed(context, '/profile');
-                        },
-                      ),
-                    ],
-                  )
-                ])
               ],
             ),
           ),

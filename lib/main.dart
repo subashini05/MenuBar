@@ -1,28 +1,19 @@
+import 'package:doctor_booking_app/views/home.dart';
 import 'package:flutter/material.dart';
-import 'package:student/pages/google_api_list_screen.dart';
-import 'package:student/pages/calculator_screen.dart';
-import 'package:student/pages/menuPage/coreWidget.dart';
-import 'package:student/pages/menu_screen.dart';
-import 'package:student/pages/profile_screen.dart';
-import 'package:student/pages/table_screen.dart';
 
-void main() => runApp(Navigation());
+void main() => runApp(MyApp());
 
-class Navigation extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Doctorn App',
       debugShowCheckedModeBanner: false,
-      title: 'Navigation Example',
-      initialRoute: '/',
-      routes: {
-        '/': (context) => MyMenu(),
-        '/table': (context) => TableScreen(),
-        "/list": (context) => GoogleApiListScreen(),
-        "/calculator": (context) => CalculatorApp(),
-        "/profile": (context) => ProfileScreen(),
-        "/coreWidget": (context) => CoreWidget(),
-      },
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: HomePage(),
     );
   }
 }
